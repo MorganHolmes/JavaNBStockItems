@@ -75,7 +75,7 @@ public class StockItems
         return "*** Stock Report ***\n" + "Item: " + getDescription()
         + "\nPrice: " + getPrice() + "\nStock Level: " + getStockLevel() +
          "\nSell By Date: " + sellByDate.getAsString() +
-        "\n********************";
+        "\n********************\n";
     }
     }
     
