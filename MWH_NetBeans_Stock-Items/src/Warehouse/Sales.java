@@ -10,6 +10,7 @@ public class Sales {
        String proName = myObj.nextLine();
        StockItems product1 = new StockItems(proName, 65);
        System.out.println(product1.getStockInfo());
+       TestList a = new TestList();
     }
     
 }

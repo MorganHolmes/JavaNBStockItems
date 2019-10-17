@@ -42,6 +42,17 @@ public class StockList {
         return shop.get(i);
     }
     
+    public StockItems getItemByStockNo(int stockNo){
+        for(int i = 0; i < noOfStockItems();i++){
+            StockItems temp = shop.get(i);
+            if(temp.getStockNo() == stockNo){
+                return temp;
+            }
+        }
+        return null; 
+      
+    }
+    
     public StockItems getItem(String desc){
         for(int i = 0; i < noOfStockItems();i++){
             StockItems temp = shop.get(i);

@@ -7,6 +7,7 @@ public class StockItems
     private int level;
     private double price;
     private Date sellByDate;
+    private int stockNo;
     
     //Constructor
     public StockItems(String desc, double price){
@@ -23,6 +24,14 @@ public class StockItems
         sellByDate = new Date(d,m,y);
     }
     
+     public StockItems(String desc, double price, int d, int m, int y,int stockNo){
+        level = 0;
+        description = desc;
+        this.price = price;
+        sellByDate = new Date(d,m,y);
+        this.stockNo = stockNo;
+    }
+   
     //Mutators
     public void setPrice(double price){
         this.price = price;
@@ -44,6 +53,7 @@ public class StockItems
         }
     }
     
+    //Accessors
     public int getStockLevel(){
         return level;
     }
@@ -54,6 +64,10 @@ public class StockItems
     
     public double getPrice(){
         return price;
+    }
+    
+    public int getStockNo(){
+        return stockNo;
     }
    
     
