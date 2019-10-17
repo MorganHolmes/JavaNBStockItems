@@ -37,4 +37,23 @@ public class StockList {
         }
         return allItems;
     }
+    
+    public StockItems getItem(int i){
+        return shop.get(i);
+    }
+    
+    public StockItems getItem(String desc){
+        for(int i = 0; i < noOfStockItems();i++){
+            StockItems temp = shop.get(i);
+            if(temp.getDescription() == desc){
+                return temp;
+            }
+        }
+        return null;   
+    }
+    
+    public void addStockItem(String desc, double price, int d, int m, int y){
+        StockItems temp = new StockItems(desc,price,d,m,y);
+        addStockItem(temp);
+    }
 }
