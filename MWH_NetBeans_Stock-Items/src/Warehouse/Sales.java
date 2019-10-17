@@ -11,6 +11,7 @@ public class Sales {
        StockItems product1 = new StockItems(proName, 65);
        System.out.println(product1.getStockInfo());
        TestList a = new TestList();
+       TestMap b = new TestMap();
     }
     
 }
